@@ -11,6 +11,7 @@
 最重要的类型是
 * get
 * post
+
 requests模块可以方便地向服务器发送不同类型的请求。
 
 ### Install requests
@@ -38,3 +39,24 @@ How to use requests to send this post request?
     * 再点击 submit
 
 你就能看到服务器返回给你定制化后的页面时, 你使用的方法和数据.
+
+```html
+<form method="post" action="processing.php">
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname"><br>
+<input type="submit" value="Submit" id="submit">
+</form>
+```
+
+### Upload file
+
+传照片也是 post 的一种, 我们得将本地的照片文件传送到服务器. 我们使用这个网页来模拟一次传照片的过程.
+
+https://pythonscraping.com/pages/files/form2.html
+
+```html
+<form action="processing2.php" method="post" enctype="multipart/form-data">
+  Submit a jpg, png, or gif: <input type="file" name="uploadFile"><br>
+  <input type="submit" value="Upload File">
+</form>
+```

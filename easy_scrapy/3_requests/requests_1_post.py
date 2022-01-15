@@ -9,7 +9,7 @@ print(r.url)
 webbrowser.open(r.url) #打开默认浏览器, 观看百度的搜索页面
 
 # send post request with data
-start_url = 'http://pythonscraping.com/pages/files/processing.php'
+start_url = 'https://pythonscraping.com/pages/files/processing.php'
 data = {'firstname': 'Eric', 'lastname': 'Yang'}
 
 r = requests.post(start_url, data=data)
