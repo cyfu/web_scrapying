@@ -77,3 +77,12 @@ cookies 的传递也特别重要, 比如我用 requests.post + payload 的用户
 ### Log in website with session
 每次都要传递 cookies 是很麻烦的, 好在 requests 有个很 handy 的功能, 那就是 Session. 在一次会话中, 我们的 cookies 信息都是相连通的, 它自动帮我们传递这些 cookies 信息.
 创建完一个 session 过后, 我们直接只用 session 来 post 和 get. 而且这次 get 的时候, 我们并没有传入 cookies. 但是实际上 session 内部就已经有了之前的 cookies 了.
+
+## Download file
+
+今天我们来爬这张图, 还有下载这张图.
+
+我们首先要到这张图所在的[网页](https://mofanpy.com/learning-steps/),找出图片的link。然后使用get请求下载图片。
+
+
+![莫烦Python的个性化学习路线](https://static.mofanpy.com/img/description/learning_step_flowchart.png)
