@@ -86,3 +86,21 @@ cookies 的传递也特别重要, 比如我用 requests.post + payload 的用户
 
 
 ![莫烦Python的个性化学习路线](https://static.mofanpy.com/img/description/learning_step_flowchart.png)
+
+## 下载国家地理杂志的美图
+
+结合之前学习的 requests 访问和 下载功能, 还有 BeautifulSoup, 来下载一些国家地理杂志的美图。
+
+但是国家地理改版过了， 教程中的网页没有返回任何内容。
+
+http://www.ngchina.com.cn/animals/
+
+试着抓一下每日一图，但是网站现在使用了ajax技术，这里的下载方法不能得到图片，以后再说。
+
+http://www.ngchina.com.cn/news/detail?newsId=47211
+
+这个练习就改成从百度贴吧的帖子里面下载图片。
+
+试了两个关于冬奥的帖子：
+* https://tieba.baidu.com/p/7630316132
+* https://tieba.baidu.com/p/7231728012
