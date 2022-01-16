@@ -60,3 +60,17 @@ https://pythonscraping.com/pages/files/form2.html
   <input type="submit" value="Upload File">
 </form>
 ```
+
+### Log in website with cookie
+用 post 还有一个重要的作用, 就是模拟登录.
+
+https://pythonscraping.com/pages/cookies/login.html
+
+我们总结一下, 为了这次登录账号, 我们的浏览器做了什么.
+1. 使用 post 方法登录了第一个红框的 url
+2. post 的时候, 使用了 Form data 中的用户名和密码
+3. 生成了一些 cookies
+
+cookies 的传递也特别重要, 比如我用 requests.post + payload 的用户信息发给网页, 返回的 r 里面会有生成的 cookies 信息.
+接着我请求去登录后的页面时, 使用 request.get, 并将之前的 cookies 传入到 get 请求. 这样就能已登录的名义访问 get 的页面了.
+
